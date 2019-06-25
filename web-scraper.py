@@ -8,8 +8,8 @@ session_requests = requests.session()
 # Required variables
 login_url = 'https://www.codecademy.com/login'
 authd_url = 'https://www.codecademy.com/learn'
-name = 'tgiordani@hanover.com'
-password = 'Sickman77890Cronus'
+name = 'xxxxxxxx'
+password = 'xxxxxxxx'
 
 # Get the auth token
 result_auth_token = session_requests.get(login_url, verify=False)
