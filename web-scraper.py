@@ -6,8 +6,8 @@ from lxml import html
 session_requests = requests.session()
 
 # Required variables
-login_url = 'https://www.codecademy.com/login'
-authd_url = 'https://www.codecademy.com/learn'
+login_url = 'https://www.codecademy.com/login' # url for the login forms action source
+authd_url = 'https://www.codecademy.com/learn' # url of page you are trying to scrape from
 name = 'xxxxxxxx'
 password = 'xxxxxxxx'
 
@@ -18,9 +18,9 @@ authenticity_token = list(set(tree.xpath("//input[@name='authenticity_token']/@v
 
 # Payload
 payload = {
-    'user[login]': name,
-    'user[password]': password,
-    'authenticity_token': authenticity_token
+    'user[login]': name, # name value of username input
+    'user[password]': password, # name value of password input
+    'authenticity_token': authenticity_token # name value of authentication token
 }
 
 # Send login data to login_url
